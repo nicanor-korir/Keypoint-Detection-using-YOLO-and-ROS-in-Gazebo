@@ -1,0 +1,22 @@
+<!-- Simplified launch for macOS - No ros2_control -->
+<launch>
+
+    <!-- Start Gazebo without ROS plugins that cause crashes on macOS -->
+    <include file="$(find-pkg-share deepmind_bot_gazebo)/launch/start_world_simple.launch.py">
+        <arg name="world" value="$(find-pkg-share deepmind_bot_gazebo)/worlds/perception1.world"/>
+    </include>
+
+    <!-- Spawn the robot without controllers -->
+    <include file="$(find-pkg-share deepmind_bot_description)/launch/robot_state_publisher_simple.launch.py">
+        <arg name="robot_name" value="deepmind_robot1"/>
+        <arg name="robot_file" value="deepmind_bot_simple.xacro"/>
+    </include>
+
+    <!-- Spawn entity in Gazebo -->
+    <node pkg="gazebo_ros" exec="spawn_entity.py" name="cam_bot_spawn_entity"
+        args="-entity deepmind_robot1 -x -1.54 -y 1.3 -z 0.04 -R 0.0 -P 0.0 -Y 0.0 -topic /deepmind_robot1_robot_description"
+        output="screen">
+        <remap from="/robot_state_publisher" to="deepmind_robot1_robot_state_publisher"/>
+    </node>
+
+</launch>

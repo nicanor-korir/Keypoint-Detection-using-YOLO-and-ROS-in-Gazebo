@@ -1,0 +1,57 @@
+# ROS 2 Build Artifacts
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+ros2_ws/build/
+ros2_ws/install/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Conda
+.conda/
+.condarc
+
+# System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project un Specific files
+Advanced_Robot_Application.pdf
+Technical_Report_YOLOv8_ROS2.md
+
+# YOLO Weights (if downloaded locally)
+*.pt
