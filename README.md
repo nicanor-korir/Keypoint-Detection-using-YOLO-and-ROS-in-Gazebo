@@ -1,4 +1,4 @@
-# YOLOv8-Pose Integration with ROS 2 Humble
+# YOLOv8-Pose Integration with ROS 2 Humble (DeepMind Bot)
 
 This project demonstrates the integration of **YOLOv8-Pose** (State-of-the-Art Pose Estimation) with **ROS 2 Humble** in a Gazebo simulation environment. It features a custom robot ("DeepMind Bot") navigating a museum environment, where the vision system detects human keypoints and calculates kinematic angles in real-time.
 
@@ -99,7 +99,6 @@ ros2 run advanced_perception yolo_pose_estimation_node
 ```
 
 ### 3. Visualization (Rviz2)
-
 To visualize the results (images with drawn keypoints and markers):
 
 ```bash

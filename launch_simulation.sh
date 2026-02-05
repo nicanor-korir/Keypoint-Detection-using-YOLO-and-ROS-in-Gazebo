@@ -11,7 +11,11 @@ conda activate ros2_humble_env
 # 3. CRITICAL: Unset PYTHONPATH to prevent system python conflicts
 unset PYTHONPATH
 
-# 4. Source Workspace setup (skip conda prefix setup.bash as it causes issues)
+# 4. Source Environments
+# Source Conda ROS setup first to get library paths
+source "$CONDA_PREFIX/setup.bash"
+
+# Source Workspace setup
 if [ -f "ros2_ws/install/setup.bash" ]; then
     source ros2_ws/install/setup.bash
 elif [ -f "ros2_ws/install/setup.zsh" ]; then
