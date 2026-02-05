@@ -46,7 +46,7 @@ A consolidated script is provided to automate the environment creation, dependen
 **What works:** Gazebo visualization, camera/sensor data, YOLOv8 pose estimation, RViz
 **What doesn't work:** Robot joint control via ros2_control (controller_manager)
 
-This limitation does not affect the pose estimation functionality - you have everything needed for the YOLOv8 project!
+This limitation does not affect the keypoint detection
 
 ### 1. Launching the Simulation
 

@@ -49,9 +49,8 @@ Thumbs.db
 *.swp
 *.swo
 
-# Project un Specific files
+# Project Specific files
 Advanced_Robot_Application.pdf
-Technical_Report_YOLOv8_ROS2.md
 
 # YOLO Weights (if downloaded locally)
 *.pt
